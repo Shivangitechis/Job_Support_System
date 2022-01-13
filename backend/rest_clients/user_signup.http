@@ -1,0 +1,13 @@
+# To use the http client, install "REST Client" extension of Visual Studio Code.
+# To send the request and get the result, click the 'Send Request' 
+POST http://127.0.0.1:8000/users/signup/ HTTP/1.1
+content-type: application/json
+
+{
+    "status": "active",
+    "user_name": "shivangi",
+    "email": "shivangi@gmail.com",
+    "password": "12345",
+    "role": "job_support",
+    "permission": "normal"
+}

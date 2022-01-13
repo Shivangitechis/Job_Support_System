@@ -1,3 +1,20 @@
+USER_STATUS = (
+    ('active', 'Active'),
+    ('deleted', 'Deleted')
+)
+
+USER_ROLE = (
+    ('director', 'Director'),
+    ('marketing', 'Marketing'),
+    ('job_support', 'Job Support'),
+    ('development', 'Development')
+)
+
+USER_PERMISSION = (
+    ('normal', 'Normal'),
+    ('manager', 'Manager')
+)
+
 GENDER = (
     ('male', 'Male'),
     ('female', 'Female')
@@ -9,7 +26,8 @@ STATUS = (
     ('started_application', 'Started Application'),
     ('pause_application', 'Pause Application'),
     ('got_offer', 'Got an Offer'),
-    ('failed', 'Failed to Get a Job')
+    ('failed', 'Failed to Get a Job'),
+    ('deleted', 'Deleted')
 )
 
 APPLICATION_QUESTIONNAIRE_STATUS = (
@@ -60,7 +78,8 @@ APPLIED_BY = (
 
 APPLICATIONS_STATUS = (
     ('applied', 'Applied'),
-    ('offered', 'Offered')
+    ('offered', 'Offered'),
+    ('deleted', 'Deleted')
 )
 
 JOB_PORTAL = (
@@ -71,4 +90,30 @@ JOB_PORTAL = (
     ('work_day', 'Work Day'),
     ('smart_work', 'Smart Work'),
     ('dice', 'Dice')
+)
+INTERVIEW_STATUS = (
+    ('scheduling', 'Scheduling'),
+    ('scheduled', 'Scheduled'),
+    ('done', 'Done and Waiting for the Result'),
+    ('canceled', 'Canceled Interview by Company'),
+    ('missed', 'Missed Interview by Student'),
+    ('rejected', 'Rejected'),
+    ('passed', 'Passed'),
+    ('offered', 'Offered'),
+    ('deleted', 'Deleted')
+)
+INTERVIEW_TYPE = (
+    ('phone_call', 'Phone call'),
+    ('assessment', 'Assessment'),
+    ('video_call', 'Video Call'),
+    ('onsite_interview', 'Onsite Interview')
+)
+INTERVIEW_STUDENT_TIMEZONE = (
+    ('usa_eastern', 'USA/Eastern'),
+    ('usa_central', 'USA/Central'),
+    ('usa_mountain', 'USA/Mountain'),
+    ('usa_pacific', 'USA/Pacific'),
+    ('usa_arizona', 'USA/Arizona'),
+    ('usa_alaska', 'USA/Alaska'),
+    ('usa_hawaii', 'USA/Hawaii'),
 )
